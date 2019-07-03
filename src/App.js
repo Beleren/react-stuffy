@@ -1,8 +1,9 @@
 import React from 'react';
+import './App.scss';
 
 const App = () => {
   return (
-    <div>
+    <div className="bg-black">
       <h1> Stuffyy </h1>
     </div>
   );

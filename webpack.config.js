@@ -10,6 +10,10 @@ module.exports = {
         loader: 'babel-loader',
         options: { presets: ['@babel/env'] },
       },
+      {
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
     ],
   },
   resolve: { extensions: ['*', '.js', '.jsx'] },

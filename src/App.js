@@ -3,7 +3,7 @@ import './App.scss';
 
 const App = () => {
   return (
-    <div className="bg-black">
+    <div>
       <h1> Stuffyy </h1>
     </div>
   );

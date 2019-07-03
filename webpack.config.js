@@ -2,7 +2,6 @@ const path = require('path');
 
 module.exports = {
   entry: './src/index.js',
-  mode: 'development',
   module: {
     rules: [
       {
@@ -16,6 +15,12 @@ module.exports = {
   resolve: { extensions: ['*', '.js', '.jsx'] },
   output: {
     filename: 'bundle.js',
+    publicPath: '/dist',
     path: path.resolve(__dirname, 'dist'),
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'public/'),
+    port: 8000,
+    publicPath: 'http://localhost:8000/dist/',
   },
 };

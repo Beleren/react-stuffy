@@ -21,7 +21,7 @@ module.exports = {
           {
             loader: 'html-loader',
             options: { minimize: true },
-          },
+            },
         ],
       },
     ],
@@ -35,12 +35,12 @@ module.exports = {
   resolve: { extensions: ['*', '.js', '.jsx'] },
   output: {
     filename: 'bundle.js',
-    publicPath: '/dist',
-    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/',
+    path: path.resolve(__dirname, 'build/'),
   },
   devServer: {
-    contentBase: path.join(__dirname, 'dist/'),
+    contentBase: path.join(__dirname, 'build/'),
     port: 8000,
-    publicPath: 'http://localhost:8000/dist/',
+    publicPath: 'http://localhost:8000/',
   },
 };

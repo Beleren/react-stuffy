@@ -1,4 +1,7 @@
-# react-stuffy
-Spoofy was taken, now i'll name it stuffy
+# Trying hard to keep on going.
 
-[DesafioXP](https://github.com/grupo-xp/challenge/blob/master/react/README.md)
+I'll make this project my portfolio and this is how i'm creating a React App from scratch.
+
+## Starting with the basics:
+- React
+- Webpack

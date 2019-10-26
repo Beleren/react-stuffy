@@ -1,5 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import Home from './scenes/Home';
 import './App.scss';
 
 const App = () => {
@@ -18,7 +19,7 @@ const App = () => {
         />
       </Helmet>
 
-      <h1> Stuffyy </h1>
+      <Home />
     </>
   );
 };

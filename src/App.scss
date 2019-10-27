@@ -1,5 +1,26 @@
+$navy-blue: #000033;
+$light-blue: #80bfff;
+$white: #ffffff;
+$bronze: #604020;
+$moss-green: #4d4d00;
+
+$color-background-primary: $navy-blue;
+
+$color-text-primary: $white;
+
+html {
+  height: 100%;
+}
+
 body {
-  background-color: black;
-  color: white;
+  background-color: $color-background-primary;
+  color: $color-text-primary;
   font-family: 'M PLUS Rounded 1c', sans-serif;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+
+  #root {
+    height: 100%;
+  }
 }

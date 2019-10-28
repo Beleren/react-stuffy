@@ -1,23 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 import './Home.scss';
 import About from './components/About';
 import Skills from './components/Skills';
 import Service from './components/Service';
+import Nav from './components/Nav';
 
 const Home = () => {
-  const [currentSection, setCurrentSection] = useState(About);
   return (
     <div className="home">
-      <div className="home__content">{currentSection}</div>
-      <nav className="home__nav">
-        <ul>
-          <li onClick={() => setCurrentSection(About)}>Who am i?</li>
-          <li onClick={() => setCurrentSection(Skills)}>What can i do?</li>
-          <li onClick={() => setCurrentSection(Service)}>
-            How can i help you?
-          </li>
-        </ul>
-      </nav>
+      <div className="home__content">
+        <Switch>
+          <Route path="/service" component={Service} />
+          <Route path="/skills" component={Skills} />
+          <Route path="/" component={About} />
+        </Switch>
+      </div>
+      <Nav />
     </div>
   );
 };
